@@ -7,10 +7,11 @@ import is.apedrivers.sensors.VirtualSensor;
 public class CarAheadSpeedSensor implements VirtualSensor{
 
     private Bus bus;
-    private double carAheadSpeed;
     private double ownSpeed;
     public CarAheadSpeedSensor(Bus bus) {
         this.bus = bus;
+        ownSpeed = 0;
+
     }
 
     @Override
